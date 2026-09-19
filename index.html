@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Elham Moafa's personal portfolio website."
+    />
+
+    <title>Elham Moafa | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="logo" href="#home">EM<span>.</span></a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open navigation"
+        >
+          ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            ☾
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow" id="greeting">
+            Hello, welcome to my portfolio.
+          </p>
+
+          <h1>
+            Building simple ideas into
+            <span>useful digital experiences.</span>
+          </h1>
+
+          <p class="hero-text">
+            I am Elham Moafa, a student and aspiring web developer interested
+            in front-end development, user experience, and creative
+            problem-solving.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View My Work</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Profile introduction">
+          <img
+            src="assets/images/elham-profile.png"
+            alt="Portrait of Elham Moafa"
+            class="profile-image"
+          />
+
+          <p>Elham Moafa</p>
+          <span>Student Developer</span>
+          <small>HTML · CSS · JavaScript</small>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">01 — About Me</p>
+          <h2>A curious learner with a practical mindset.</h2>
+        </div>
+
+        <div class="about-grid">
+          <p>
+            I enjoy learning how websites work and turning ideas into clean,
+            responsive interfaces. My goal is to keep improving my technical
+            skills while creating digital products that are clear and easy to
+            use.
+          </p>
+
+          <p>
+            This portfolio is my first foundation project. It demonstrates
+            semantic HTML, responsive CSS, JavaScript interactivity, and
+            responsible use of AI-assisted development.
+          </p>
+        </div>
+      </section>
+
+      <section class="section muted" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">02 — Selected Projects</p>
+            <h2>Work I am proud to practice with.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-image image-one">01</div>
+
+              <div class="project-content">
+                <p class="project-type">Web Design</p>
+
+                <h3>Study Planner</h3>
+
+                <p>
+                  A clean planning interface that helps students organize
+                  subjects, deadlines, and weekly goals.
+                </p>
+
+                <a href="#contact">Discuss project →</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image image-two">02</div>
+
+              <div class="project-content">
+                <p class="project-type">Front-End Practice</p>
+
+                <h3>Local Café Landing Page</h3>
+
+                <p>
+                  A responsive landing page concept with a menu section,
+                  location details, and a clear call to action.
+                </p>
+
+                <a href="#contact">Discuss project →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">03 — Skills</p>
+          <h2>Tools I am currently developing.</h2>
+        </div>
+
+        <div class="skills-list">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>Git & GitHub</span>
+          <span>Problem Solving</span>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">04 — Contact</p>
+
+            <h2>Have an idea? Let’s connect.</h2>
+
+            <p>
+              Use the form to send a message. This demonstration form validates
+              the input on the client side and does not send data to a server.
+            </p>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <button class="btn primary" type="submit">
+              Send Message
+            </button>
+
+            <p class="form-message" id="formMessage" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 Elham Moafa. Assignment 1 Portfolio.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
